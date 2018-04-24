@@ -1,0 +1,316 @@
+/*===============================================HOME PAGE========================================================*/
+
+@media (max-width: 1199.98px) {
+    .header .custom-link {
+        padding: 10px !important;
+        font-size: 14px !important;
+    }
+    .counting-up h1 .title {
+        display: block;
+        line-height: 20px;
+        margin: 15px 0;
+    }
+}
+
+
+@media (max-width: 991.98px) {
+    .header .main-nav::before {
+        opacity: .8;
+    }
+    .header .custom-ul {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        margin: 15rem 0;
+    }
+    .header .custom-link {
+        font-size: 20px !important;
+    }
+    .footer-title button {
+        float: right;
+    }
+    .footer .content {
+        margin: 40px 0;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .loader {
+        left: 40%;
+        vertical-align: middle;
+    }
+    .creativity .box .icons {
+        top: 20px;
+        right: 30px;
+    }
+    .footer-title button {
+        float: left;
+    }
+    .footer .copyright ul {
+        float: left;
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .search-popup .box {
+        width: 90%;
+    }
+    .top-content button {
+        margin: 10px 0;
+    }
+    .creativity .button-group button {
+        margin: 10px 6px;
+    }
+    .creativity .box .text {
+        padding: 10px 34px;
+    }
+}
+
+
+@media (max-width: 325px) {
+    .header .main-logo {
+        width: 160px;
+    }
+}
+
+/*===============================================END HOME PAGE========================================================*/
+
+/*===============================================SERVICES PAGE========================================================*/
+
+@media (max-width: 991.98px) {
+    .services .image {
+        margin-top: 5rem;
+    }
+    .services .box {
+        margin: 10px 0;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .header .blog-bg .content ul {
+        float: left;
+    }
+    .services .text ul {
+        padding-left: 30px;
+    }
+    .services .text ul::before {
+        left: 0;
+    }
+}
+
+
+/*===============================================END SERVICES PAGE========================================================*/
+
+/*===============================================TEAM PAGE========================================================*/
+
+@media (max-width: 1199.98px) {
+    .our-teams .box .text {
+        padding: 5px 0;
+    }
+    .our-teams .box ul li {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .our-teams .box {
+        margin: 10px 12px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .our-teams .button-group button {
+        margin: 10px;
+    }
+    .skills #accordion {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .our-teams img {
+        width: 100%;
+    }
+    .our-teams .box .text {
+        padding: 20px 0;
+    }
+}
+
+/*===============================================END TEAM PAGE========================================================*/
+
+/*===============================================BLOG PAGE========================================================*/
+
+@media (max-width: 1199.98px) {
+    .timeline::before {
+        bottom: -61rem;
+    }
+    .timeline .box .date {
+        right: -92px;
+    }
+    .timeline .box.box2 .date {
+        left: -90px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .timeline .box{
+        width: 100%;
+        margin: 15px auto;
+    }
+    .timeline::before {
+        display: none;
+    }
+    .timeline .box::before{
+        display: none
+    }
+    .timeline .box:hover::before{
+        border: none;
+        border-bottom: 1px solid #7FB33D;
+        border-left: 1px solid #7FB33D;
+    }
+    .timeline .box .date,.timeline .box.box2 .date {
+        left: 20px;
+        top: 20px;
+    }
+}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {}
+@media (max-width: 315px) {
+    .timeline h4{
+        width: 70%;
+        text-align: center;
+    }
+}
+
+/*===============================================END BLOG PAGE========================================================*/
+
+
+
+
+
+
+/*===============================================PORTFOLIO PAGE========================================================*/
+
+@media (max-width: 767.98px) {
+    .creativity .button-group button{
+        margin: 10px;
+    }
+    .portfollio .image{
+        width: 100%;
+    }
+}
+
+/*===============================================END PORTFOLIO PAGE======================================================*/
+
+
+
+
+/*===============================================START ABOUT & CONTACT PAGE===============================================*/
+
+@media (max-width: 1199.98px) {
+    .history .text .date{
+        left: 61%;
+    }
+    .history .text.text2 .date {
+        right: -23%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .blog-bg{
+        background-size: 200% 150%;
+    }
+    .about-us .content {
+        margin: 20px 0;
+    }
+    .reason{
+        background-size: 200% 150%;
+    }
+    .history .text .date {
+        left: 65%;
+    }
+    .history .text.text2 .date {
+        right: -46%;
+    }
+    .opinions .image {
+        margin-top: 0rem;
+    }
+    .signup .name{
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .history .text .date {
+        left: 70%;
+    }
+    .history .text.text2 .date {
+        right: -77%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .history .content::before{
+        left: 3%;
+    }
+    .history .text .text-1{
+        width: 85%;
+        text-align: left;
+        padding-right: 0;
+        margin-left: 40px;
+    }
+    .history .text.text2 .text-1 {
+        float: left;
+        margin-left: 40px;
+        text-align: left;
+        padding-left: 0;
+    }
+    .history .text .dot{
+        left: 3%;
+    }
+    .history .text .date {
+        left: 50%;
+        position: relative;
+    }
+    .history .text.text.text2 .dot::before{
+        display: none;
+    }
+    .history .down-arrow{
+        left: 3%;
+    }
+}
+
+@media (max-width: 508px){
+    .header .fixed-top{
+        padding: 7px 0 !important;
+    }
+    .opinions .box .content{
+        padding: 70px 30px;
+    }
+    .opinions .box .content p{
+        padding-left: 0;
+    }
+}
+
+
+/*===============================================END ABOUT PAGE======================================================*/
+
+/*
+
+
+@media (max-width: 1199.98px) { }
+
+@media (max-width: 991.98px) { }
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) { }
+
+
+*/
