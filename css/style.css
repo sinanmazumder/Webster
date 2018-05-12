@@ -5,7 +5,10 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
-.ui-widget{
+.mfp-counter{
+    display: none;
+}
+.ui-widget {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -203,6 +206,7 @@ button:focus {
         transform: rotate(360deg);
     }
 }
+
 @-o-keyframes animate {
     0% {
         transform: rotate(0);
@@ -230,21 +234,19 @@ button:focus {
     transition: .5s;
 }
 
-.header .main-logo img {
-    width: 100%;
-}
-
 .header .fixed-top {
     position: fixed !important;
     z-index: 1030 !important;
     padding: 2px !important;
     transition: .5s;
 }
+
 .header .navbar-light .navbar-toggler {
     border: 2px solid #27ae60;
 }
-.header .navbar-light .navbar-toggler-icon{
-    background-image:url('../images/nav.png');
+
+.header .navbar-light .navbar-toggler-icon {
+    background-image: url('../images/nav.png');
 }
 
 .header .main-nav:before {
@@ -377,6 +379,7 @@ button:focus {
 
 .header .box button {
     background: #7EB13C;
+    color: #fff;
     border: none;
     text-transform: uppercase;
     padding: 15px 25px;
@@ -390,10 +393,6 @@ button:focus {
 
 .header .box button:hover {
     box-shadow: 0px 0px 10px #7EB13C;
-}
-
-.header .box button a {
-    color: #fff;
 }
 
 .header .owl-prev {
@@ -781,13 +780,15 @@ button:focus {
     left: 36%;
 }
 
-.creativity .element-item{
+.creativity .element-item {
     padding: 0 !important;
 }
-.creativity .button-group{
+
+.creativity .button-group {
     margin: 40px 0;
 }
-.creativity .button-group button{
+
+.creativity .button-group button {
     background: transparent;
     border: 1px solid #cbcbcb;
     border-radius: 6px;
@@ -796,7 +797,9 @@ button:focus {
     cursor: pointer;
     transition: .5s;
 }
-.creativity .button-group button.active,.creativity .button-group button:hover{
+
+.creativity .button-group button.active,
+.creativity .button-group button:hover {
     background: #84BA3F !important;
     border: 1px solid #84BA3F !important;
     color: #fff;
@@ -817,6 +820,7 @@ button:focus {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
 }
+
 .creativity .box .text {
     position: absolute;
     bottom: -50%;
@@ -849,7 +853,6 @@ button:focus {
 .creativity .box .icons {
     position: absolute;
     top: 10px;
-    color: #544f4f;
     right: 10px;
     background: #fff;
     width: 45px;
@@ -864,8 +867,16 @@ button:focus {
     transition: .6s;
 }
 
+.creativity .box .icons a {
+    color: #544f4f;
+    transition: .5s;
+}
+
 .creativity .box .icons:hover {
     background: #84BA3F;
+}
+
+.creativity .box .icons:hover a {
     color: #fff;
 }
 
@@ -1379,32 +1390,13 @@ button:focus {
 
 /*=============================================================END HOME PAGE==============================================*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*===================================================START BLOG PAGE================================================*/
-.header.blog{
+
+.header.blog {
     height: 30rem;
 }
-.blog-bg{
+
+.blog-bg {
     position: absolute;
     overflow: hidden;
     top: 0;
@@ -1415,7 +1407,8 @@ button:focus {
     background-size: cover;
     z-index: 2;
 }
-.blog-bg:before{
+
+.blog-bg:before {
     content: '';
     position: absolute;
     top: 0;
@@ -1426,38 +1419,45 @@ button:focus {
     opacity: .7;
     z-index: -2;
 }
-.header .blog-bg .content{
+
+.header .blog-bg .content {
     position: absolute;
     width: 81%;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     color: #fff;
 }
-.header .blog-bg .content h1{
+
+.header .blog-bg .content h1 {
     text-transform: capitalize;
     font-weight: 600;
     font-size: 36px;
 }
-.header .blog-bg .content h4{
+
+.header .blog-bg .content h4 {
     margin-bottom: 0;
     font-size: 20px;
 }
-.header .blog-bg .content ul{
+
+.header .blog-bg .content ul {
     margin-top: 30px;
     float: right;
 }
+
 .header .blog-bg .content ul li {
     float: left;
     margin-right: 15px;
 }
-.header .blog-bg .content ul li:last-child{
+
+.header .blog-bg .content ul li:last-child {
     margin-right: 0;
 }
-.header .blog-bg .content ul li a{
+
+.header .blog-bg .content ul li a {
     color: #fff;
     font-weight: normal;
 }
@@ -1467,11 +1467,13 @@ button:focus {
 
 
 /* timeline section */
-.timeline{
+
+.timeline {
     position: relative;
     overflow: hidden;
     padding: 140px 0;
 }
+
 .timeline::before {
     content: '';
     position: absolute;
@@ -1485,7 +1487,8 @@ button:focus {
     height: 93%;
     background: #e9e9e9;
 }
-.timeline h4{
+
+.timeline h4 {
     display: inline-block;
     position: absolute;
     top: 60px;
@@ -1501,6 +1504,7 @@ button:focus {
     font-weight: 500;
     z-index: 9;
 }
+
 .timeline .box {
     position: relative;
     width: 90%;
@@ -1509,7 +1513,8 @@ button:focus {
     border: 1px solid #e3e0e0;
     transition: .3s;
 }
-.timeline .box .date{
+
+.timeline .box .date {
     position: absolute;
     text-align: center;
     right: -102px;
@@ -1525,25 +1530,30 @@ button:focus {
     z-index: 99;
     transition: .4s;
 }
-.timeline .box:hover .date{
+
+.timeline .box:hover .date {
     background: #84BA3F;
     border: 3px solid #84BA3F;
     color: #fff;
 }
-.timeline .box .date h3{
+
+.timeline .box .date h3 {
     font-weight: 600;
     font-size: 22px;
     line-height: 14px;
     margin-bottom: 0;
     cursor: pointer;
 }
-.timeline .box .date h3 span{
+
+.timeline .box .date h3 span {
     font-weight: 400;
     font-size: 13px;
 }
-.timeline .box:hover{
+
+.timeline .box:hover {
     border: 1px solid #7FB33D;
 }
+
 .timeline .box::before {
     content: '';
     position: absolute;
@@ -1561,80 +1571,96 @@ button:focus {
     background: #fff;
     transition: .3s;
 }
-.timeline .box:hover::before{
+
+.timeline .box:hover::before {
     border-top: 1px solid #7FB33D;
     border-right: 1px solid #7FB33D;
 }
-.timeline .wrapper{
+
+.timeline .wrapper {
     box-shadow: 0px 0px 10px #d8d0d0;
     padding: 15px 20px;
 }
-.timeline .box h2{
+
+.timeline .box h2 {
     font-size: 25px;
     margin: 14px 0;
     color: #5d5b5b;
 }
+
 .timeline .box .text li {
     float: left;
     margin-right: 20px;
 }
-.timeline .box .text li:last-child{
+
+.timeline .box .text li:last-child {
     margin-right: 0;
 }
+
 .timeline .box .text li a {
     color: #878585;
     font-size: 15px;
     transition: .3s;
 }
-.timeline .box .text li:hover a{
+
+.timeline .box .text li:hover a {
     color: #7FB33D;
 }
+
 .timeline .box p {
     font-size: 14px;
     color: #958c8c;
     margin: 15px 0;
     line-height: 23px;
 }
-.timeline .box .read{
+
+.timeline .box .read {
     text-transform: uppercase;
     font-size: 15px;
     color: #7FB33D;
     letter-spacing: 1px;
     transform: .4s;
 }
-.timeline .box .read:hover{
+
+.timeline .box .read:hover {
     color: #5d5b5b;
 }
+
 .timeline .box .icon li {
     float: left;
     font-weight: 600;
     color: #806f6f;
     margin-right: 10px;
 }
-.timeline .box .icon li a{
-   color: #7DB03B; 
-   transform: .4s;
+
+.timeline .box .icon li a {
+    color: #7DB03B;
+    transform: .4s;
 }
-.timeline .box .icon li:hover a{
+
+.timeline .box .icon li:hover a {
     color: #5d5b5b;
 }
 
 
-.timeline .box.box2::before{
+.timeline .box.box2::before {
     left: -9px;
     top: 107px;
     border: none;
     border-bottom: 1px solid #e3e0e0;
     border-left: 1px solid #e3e0e0;
 }
-.timeline .box.box2 .date{
+
+.timeline .box.box2 .date {
     left: -97px;
     top: 85px;
 }
-.timeline .box.box2:hover::before{
+
+.timeline .box.box2:hover::before {
     border-bottom: 1px solid #7FB33D;
     border-left: 1px solid #7FB33D;
 }
+
 .timeline .owl-dots {
     position: absolute;
     bottom: 0;
@@ -1644,6 +1670,7 @@ button:focus {
     -moz-transform: translateX(-50%);
     transform: translateX(-50%);
 }
+
 .timeline .owl-dots .owl-dot span {
     width: 14px;
     height: 14px;
@@ -1652,50 +1679,62 @@ button:focus {
     border-radius: 5px;
     transition: .5s;
 }
-.timeline .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+
+.timeline .owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
     background: #81B63E;
     height: 20px;
 }
-.timeline .video{
+
+.timeline .video {
     width: 100%;
     height: 13rem;
 }
-.timeline .video iframe{
+
+.timeline .video iframe {
     width: 100%;
     height: 100%;
 }
-.timeline .content audio{
+
+.timeline .content audio {
     background: #fff;
     position: absolute;
     left: 50%;
     top: 50%;
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     width: 90%;
 }
-.timeline .box .image{
+
+.timeline .box .image {
     margin: 2px;
     overflow: hidden;
 }
-.timeline .box .image img{
+
+.timeline .box .image img {
     transition: 1s;
 }
-.timeline .box .image:hover img{
+
+.timeline .box .image:hover img {
     -ms-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-.timeline iframe{
+
+.timeline iframe {
     height: 100%;
+    width: 100%;
 }
+
 .timeline .sound-cloud {
     height: 14rem;
     overflow: hidden;
 }
-.timeline button{
+
+.timeline button {
     background: #e0e0e0;
     border: none;
     text-transform: capitalize;
@@ -1711,25 +1750,13 @@ button:focus {
     cursor: pointer;
     transition: .5s;
 }
-.timeline button:hover{
+
+.timeline button:hover {
     background: #84BA3F;
     color: #fff;
 }
 
 /*=================================================================END BLOG PAGE====================================*/
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*=============================================================START SERVICES PAGE====================================*/
 
@@ -1738,51 +1765,60 @@ button:focus {
     overflow: hidden;
     padding: 80px 0;
 }
-.services .headline h2{
+
+.services .headline h2 {
     margin-bottom: 1px;
 }
-.services .headline h4{
+
+.services .headline h4 {
     color: #928787;
     font-weight: 400;
     font-size: 22px;
 }
+
 .services .box {
     position: relative;
     overflow: hidden;
     margin: 30px 0;
     padding: 20px 0;
 }
+
 .services .text {
     padding: 25px 0px;
 }
-.services .text h1{
+
+.services .text h1 {
     position: absolute;
     font-size: 200px;
     color: #d7d2d2;
     z-index: -2;
     left: 50%;
     top: 50%;
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     font-weight: 800;
 }
+
 .services .text h3 {
     color: #84BA3F;
     letter-spacing: 1px;
     font-weight: 600;
 }
+
 .services .text p {
     font-size: 15px;
     color: #7d6363;
     margin: 20px 0;
 }
+
 .services .text ul {
     position: relative;
     padding-right: 30px;
 }
-.services .text ul:before{
+
+.services .text ul:before {
     content: '';
     position: absolute;
     top: 0;
@@ -1791,37 +1827,45 @@ button:focus {
     height: 100%;
     background: #84BA3F;
 }
-.services .text.text2 ul{
+
+.services .text.text2 ul {
     padding-right: 0;
     padding-left: 30px;
 }
-.services .text.text2 ul:before{
+
+.services .text.text2 ul:before {
     left: 0;
 }
+
 .services .text ul li {
     margin: 20px 0;
     color: #6e6969;
 }
-.excellient h2{
+
+.excellient h2 {
     font-weight: 700;
     font-size: 35px;
 }
-.excellient h2 span{
+
+.excellient h2 span {
     color: #7CAE3B;
     font-size: 10px;
 }
-.excellient h3{
+
+.excellient h3 {
     margin: 15px 0;
     color: #3e3c3c;
     letter-spacing: 1px;
     font-size: 26px;
 }
-.excellient p{
+
+.excellient p {
     font-size: 14px;
     font-weight: normal;
     color: #6f6464;
 }
-.excellient a{
+
+.excellient a {
     color: #79AA39;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -1829,17 +1873,20 @@ button:focus {
     display: block;
     transition: .4s;
 }
-.excellient a span{
+
+.excellient a span {
     margin-left: 7px;
     border: 1px solid #79AA39;
     padding: 1px 8px;
     border-radius: 50%;
     transition: .4s;
 }
-.excellient a:hover{
+
+.excellient a:hover {
     color: #000;
 }
-.excellient a:hover span{
+
+.excellient a:hover span {
     border: 1px solid #000;
     margin-left: 8px;
 }
@@ -1848,21 +1895,25 @@ button:focus {
 
 
 
-.footer-title.title2{
+.footer-title.title2 {
     background: #84BA3F;
     color: #fff !important;
 }
-.footer-title.title2 h2{
+
+.footer-title.title2 h2 {
     color: #fff;
 }
-.footer-title.title2 p{
+
+.footer-title.title2 p {
     color: #fff;
 }
-.footer-title.title2 button{
+
+.footer-title.title2 button {
     color: #fff;
     border: 1px solid #fff;
     background: transparent;
 }
+
 .footer-title.title2 button:hover {
     background: #363636;
     border: 1px solid #363636;
@@ -1872,30 +1923,17 @@ button:focus {
 
 /*=============================================================END SERVICES PAGE====================================*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*=============================================================START TEAM PAGE====================================*/
-.our-teams .element-item{
+
+.our-teams .element-item {
     padding: 0 !important;
 }
-.our-teams .button-group{
+
+.our-teams .button-group {
     margin: 40px 0;
 }
-.our-teams .button-group button{
+
+.our-teams .button-group button {
     background: transparent;
     border: 1px solid #cbcbcb;
     border-radius: 6px;
@@ -1904,16 +1942,19 @@ button:focus {
     cursor: pointer;
     transition: .5s;
 }
-.our-teams .button-group button.active,.creativity .button-group button:hover{
+
+.our-teams .button-group button.active,
+.creativity .button-group button:hover {
     background: #84BA3F !important;
     border: 1px solid #84BA3F !important;
     color: #fff;
 }
 
-.our-teams .box{
+.our-teams .box {
     padding: 0;
     margin: 6px;
 }
+
 .our-teams .box .icon {
     position: absolute;
     top: 10px;
@@ -1921,10 +1962,12 @@ button:focus {
     opacity: 0;
     transition: .8s;
 }
-.our-teams .box:hover .icon{
+
+.our-teams .box:hover .icon {
     left: 10px;
     opacity: 1;
 }
+
 .our-teams .box ul li {
     margin: 10px 0;
     text-align: center;
@@ -1946,19 +1989,19 @@ button:focus {
     transition: .5s;
 }
 
-.our-teams .box ul .twitter{
+.our-teams .box ul .twitter {
     background: #55acee;
     border: 1px solid #55acee;
     transition: .5s;
 }
 
-.our-teams .box ul .instagram{
+.our-teams .box ul .instagram {
     background: #E1326B;
     border: 1px solid #E1326B;
     transition: .5s;
 }
 
-.our-teams .box ul .linkedin{
+.our-teams .box ul .linkedin {
     background: #0077B5;
     border: 1px solid #0077B5;
     transition: .5s;
@@ -1988,7 +2031,8 @@ button:focus {
     color: #fff;
     transition: .5s;
 }
-.our-teams .box .text{
+
+.our-teams .box .text {
     position: absolute;
     bottom: -30%;
     left: 50%;
@@ -2002,18 +2046,21 @@ button:focus {
     opacity: 0;
     transition: .8s;
 }
-.our-teams .box:hover .text{
+
+.our-teams .box:hover .text {
     opacity: 1;
     bottom: 0;
 }
-.our-teams .box .text h3{
+
+.our-teams .box .text h3 {
     text-align: center;
     color: #fff;
     font-size: 20px;
     line-height: 22px;
     margin-bottom: 0;
 }
-.our-teams .box .text h3 span{
+
+.our-teams .box .text h3 span {
     font-size: 14px;
 }
 
@@ -2021,22 +2068,27 @@ button:focus {
 
 
 /*skills sectionC*/
-.skills-bar .headline{
+
+.skills-bar .headline {
     margin-bottom: 45px;
 }
-.skills-bar .box{
+
+.skills-bar .box {
     margin: 20px 0;
     padding: 0;
 }
-.skills-bar .box h4{
+
+.skills-bar .box h4 {
     margin-bottom: 0px;
     font-size: 17px;
 }
-.skills-bar .box h4 span{
+
+.skills-bar .box h4 span {
     font-size: 14px;
     float: right;
     margin-right: 35px;
 }
+
 .skills-bar progress {
     background-color: #e6e6e6;
     border: 0;
@@ -2057,6 +2109,7 @@ button:focus {
 #skills progress::-moz-progress-bar {
     background-color: #84BA3F;
 }
+
 #skills progress::progress-bar {
     background-color: #84BA3F;
 }
@@ -2070,22 +2123,27 @@ button:focus {
     border-radius: 5px;
     transition: .5s;
 }
-.skills .ui-state-active,.skills .ui-accordion .ui-accordion-header:hover {
+
+.skills .ui-state-active,
+.skills .ui-accordion .ui-accordion-header:hover {
     background: #84BA3F !important;
     color: #fff;
     border-radius: 5px;
 }
+
 .skills .ui-accordion .ui-accordion-content {
     padding: 10px;
     border-top: 0;
     overflow: auto;
-    
+
     font-size: 15px;
     color: #000;
     line-height: 22px;
     border: none;
 }
-.skills .ui-icon, .ui-widget-content .ui-icon {
+
+.skills .ui-icon,
+.ui-widget-content .ui-icon {
     background: no-repeat !important;
     position: absolute;
     right: 20px;
@@ -2099,34 +2157,25 @@ button:focus {
 
 /*=============================================================END TEAM PAGE====================================*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*=============================================================START PORTFOLLIO PAGE====================================*/
-.portfollio .image{
+
+.portfollio .image {
     position: relative;
     overflow: hidden;
     margin: 5px 5px;
 }
-.portfollio .image img{
+
+.portfollio .image img {
     transition: 1s;
 }
-.portfollio .image:hover img{
+
+.portfollio .image:hover img {
     -ms-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
 }
+
 .portfollio .image .icon {
     position: absolute;
     background: #FFF;
@@ -2145,13 +2194,23 @@ button:focus {
     transition: .6s;
     z-index: 2;
 }
-.portfollio .image:hover .icon{
+
+.portfollio .image .icon a {
+    color: #4a4343;
+}
+
+.portfollio .image:hover .icon {
     opacity: 1;
 }
-.portfollio .image .icon:hover{
+
+.portfollio .image .icon:hover {
     background: #84BA3F;
+}
+
+.portfollio .image .icon:hover a {
     color: #fff;
 }
+
 .portfollio .image .text {
     position: absolute;
     background: #84BA3F;
@@ -2163,14 +2222,17 @@ button:focus {
     opacity: 0;
     transition: .6s;
 }
-.portfollio .image:hover .text{
+
+.portfollio .image:hover .text {
     opacity: 1;
     bottom: 0;
 }
+
 .portfollio .image .text h3 {
     margin-bottom: 5px;
     font-size: 25px;
 }
+
 .portfollio .image .text h5 {
     margin-bottom: 0;
     font-size: 18px;
@@ -2180,6 +2242,7 @@ button:focus {
 
 
 /*portfollio popup*/
+
 .portfllio-popup {
     position: fixed;
     top: 0;
@@ -2191,18 +2254,20 @@ button:focus {
     display: none;
     transition: .6s;
 }
-.portfllio-popup .popup{
+
+.portfllio-popup .popup {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 50%;
-    -moz-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     height: 70%;
 }
-.portfllio-popup .cross{
+
+.portfllio-popup .cross {
     color: #e7e1e1;
     position: absolute;
     top: -33px;
@@ -2210,9 +2275,11 @@ button:focus {
     font-size: 22px;
     cursor: pointer;
 }
-.portfllio-popup .popup .owl-carousel{
+
+.portfllio-popup .popup .owl-carousel {
     height: 100%;
 }
+
 .portfllio-popup .owl-nav .owl-prev {
     position: absolute;
     top: 50%;
@@ -2224,6 +2291,7 @@ button:focus {
     font-size: 40px !important;
     color: #d8d1d1 !important;
 }
+
 .portfllio-popup .owl-nav .owl-next {
     position: absolute;
     top: 50%;
@@ -2238,23 +2306,12 @@ button:focus {
 
 /*=============================================================END PORTFOLLIO PAGE====================================*/
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*=============================================================START ABOUT PAGE====================================*/
 
-.about-us .content{
+.about-us .content {
     margin: 10px 0;
 }
+
 .about-us .content h5 {
     font-size: 24px;
     font-weight: 500;
@@ -2262,6 +2319,7 @@ button:focus {
     margin: 12px 0;
     letter-spacing: 1px;
 }
+
 .about-us .content p {
     font-size: 14px;
     color: #504d4d;
@@ -2271,14 +2329,16 @@ button:focus {
 
 
 /*reason section*/
-.reason{
+
+.reason {
     background: url('../images/58.jpg');
     background-size: cover;
     color: #fff;
     position: relative;
     z-index: 2;
 }
-.reason:before{
+
+.reason:before {
     content: '';
     position: absolute;
     top: 0;
@@ -2289,23 +2349,29 @@ button:focus {
     opacity: .6;
     z-index: -2;
 }
-.reason .headline h2,.reason .headline h4{
+
+.reason .headline h2,
+.reason .headline h4 {
     color: #fff;
 }
-.reason .box{
-    overflow:hidden;
+
+.reason .box {
+    overflow: hidden;
 }
-.reason .box span{
+
+.reason .box span {
     font-size: 35px;
 }
-.reason .box h1{
+
+.reason .box h1 {
     font-size: 45px;
     margin-top: 5px;
     font-weight: 600;
     letter-spacing: 2px;
     margin-bottom: 10px;
 }
-.reason .box h5{
+
+.reason .box h5 {
     font-size: 18px;
 }
 
@@ -2313,12 +2379,14 @@ button:focus {
 
 
 /*history section*/
-.history .content{
+
+.history .content {
     position: relative;
     overflow: hidden;
     margin-top: 40px;
 }
-.history .content:before{
+
+.history .content:before {
     content: '';
     position: absolute;
     top: 0;
@@ -2331,16 +2399,19 @@ button:focus {
     height: 100%;
     background: #d4cccc;
 }
-.history .text{
+
+.history .text {
     position: relative;
     overflow: hidden;
 }
-.history .text .text-1{
+
+.history .text .text-1 {
     width: 50%;
     text-align: end;
     padding-right: 40px;
 }
-.history .text .date{
+
+.history .text .date {
     position: absolute;
     left: 60%;
     -ms-transform: translateX(-50%);
@@ -2351,6 +2422,7 @@ button:focus {
     color: #84BA3F;
     font-weight: 600;
 }
+
 .history .text .dot {
     position: absolute;
     top: 25px;
@@ -2365,6 +2437,7 @@ button:focus {
     border: 4px solid #7FB33D;
     background: #fff;
 }
+
 .history .text .dot::before {
     content: '';
     position: absolute;
@@ -2378,6 +2451,7 @@ button:focus {
     height: 2px;
     background: #dadada;
 }
+
 .history .text .dot::after {
     content: '';
     position: absolute;
@@ -2393,30 +2467,36 @@ button:focus {
     border: 6px solid #fff;
     border-radius: 50%;
 }
-.history .text.text2 .date::before{
+
+.history .text.text2 .date::before {
     left: 29%;
 }
-.history .text h5{
+
+.history .text h5 {
     color: #6C757D;
     margin-bottom: 0;
 }
-.history .text p{
+
+.history .text p {
     margin: 10px 0;
 }
 
 
-.history .text.text.text2 .dot::before{
+.history .text.text.text2 .dot::before {
     left: 20px;
 }
-.history .text.text2 .text-1{
+
+.history .text.text2 .text-1 {
     float: right;
     text-align: left;
     padding: 0;
     padding-left: 40px;
 }
-.history .text.text2 .date{
+
+.history .text.text2 .date {
     right: -14%;
 }
+
 .history .down-arrow {
     position: absolute;
     bottom: -15px;
@@ -2432,35 +2512,43 @@ button:focus {
 
 
 /*opinions section*/
-.opinions{
+
+.opinions {
     background: #F7F7F7;
 }
-.opinions .box{
+
+.opinions .box {
     margin: 0;
     padding: 55px 0;
 }
-.opinions .box .content{
+
+.opinions .box .content {
     background: #fff;
     padding: 24px 30px;
 }
-.opinions .box .content span{
+
+.opinions .box .content span {
     color: #79AA39;
     font-size: 40px;
 }
-.opinions .box .content p{
+
+.opinions .box .content p {
     color: #8a7777;
     font-size: 14px;
     padding-left: 8%;
 }
-.opinions .box .content h5{
+
+.opinions .box .content h5 {
     font-size: 17px;
     color: #3b3838;
     text-align: center;
 }
-.opinions .box .content h5 span{
+
+.opinions .box .content h5 span {
     color: #79AA39;
     font-size: 16px;
 }
+
 .opinions .box .image {
     width: 90px;
     overflow: hidden;
@@ -2470,12 +2558,15 @@ button:focus {
     left: 45px;
     bottom: 7px;
 }
+
 .opinions .owl-theme .owl-dots .owl-dot span {
     width: 12px;
     height: 15px;
     border-radius: 3px;
 }
-.opinions .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+
+.opinions .owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
     background: #84BA3F;
     height: 20px;
     width: 12px;
@@ -2485,10 +2576,12 @@ button:focus {
     -ms-transition: .4s;
     transition: .4s;
 }
+
 .opinions .logo {
     overflow: hidden;
     margin: 80px 0;
 }
+
 .opinions .logo .image {
     border-right: 1px solid #d2d2d2;
     border-bottom: 1px solid #d2d2d2;
@@ -2499,24 +2592,20 @@ button:focus {
 
 /*=============================================================END ABOUT PAGE====================================*/
 
-
-
-
-
-
-
 /*=============================================================SART CONTACT PAGE====================================*/
 
-.contact-box{
+.contact-box {
     padding-bottom: 0;
 }
-.contact-box .box{
+
+.contact-box .box {
     margin: 10px 0;
     box-shadow: 0px 0px 20px #e9dede;
     border-radius: 4px;
     padding: 55px 10px;
 }
-.contact-box .box span{
+
+.contact-box .box span {
     background: #84BA3F;
     color: #fff;
     width: 70px;
@@ -2526,19 +2615,22 @@ button:focus {
     padding: 10px;
     border-radius: 10px;
 }
-.contact-box .box h5{
+
+.contact-box .box h5 {
     text-transform: uppercase;
     margin: 25px 0;
     color: #454343;
     letter-spacing: 1px;
     font-weight: 600;
 }
-.contact-box .box p{
+
+.contact-box .box p {
     margin-bottom: 0;
     font-size: 14px;
     color: #807070;
 }
-.contact-box .simple{
+
+.contact-box .simple {
     margin: 40px 0;
     font-size: 15px;
     color: #928787;
@@ -2548,25 +2640,30 @@ button:focus {
 
 
 /*sign up section*/
-.signup{
+
+.signup {
     position: relative;
     overflow: hidden;
     padding: 55px 10px;
     padding-top: 9px;
 }
+
 .signup .name {
     background: #F6F7F8;
     border: none;
     width: 100%;
     padding: 13px 15px;
     border-radius: 5px;
-    transition:.4s; 
+    transition: .4s;
 }
-.signup .name:focus,.signup textarea:focus{
+
+.signup .name:focus,
+.signup textarea:focus {
     background: #fff;
     box-shadow: 0px 0px 10px #BFC4C9;
 }
-.signup textarea{
+
+.signup textarea {
     width: 100%;
     background: #F6F7F8;
     border: none;
@@ -2577,6 +2674,7 @@ button:focus {
     border-radius: 5px;
     transition: .4s;
 }
+
 .signup button {
     background: #77A738;
     color: #fff;
@@ -2588,31 +2686,15 @@ button:focus {
     transition: .5s;
     font-weight: 400;
 }
-.signup button:hover{
+
+.signup button:hover {
     background: #353535;
 }
-#map{
+
+#map {
     width: 100%;
     height: 32rem;
 }
 
 
 /*=============================================================END CONTACT PAGE====================================*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

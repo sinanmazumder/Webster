@@ -126,20 +126,23 @@ $('document').ready(function () {
 });
 
 
-
-// video popup 
-$(function () {
-    $(".video,#video-1").videoPopup({
-        autoplay: 1,
-        controlsColor: 'blue',
-        showVideoInformations: 0,
-        width: 1000,
-        customOptions: {
-            rel: 0,
-            end: 120
-        }
+//video popup 
+    $(function () {
+        $('.video-popup').magnificPopup({
+           type: 'iframe'
+        });
     });
-});
+    
+//image popup 
+    $(function () {
+        $('.img-popup').magnificPopup({
+            type: 'image',
+            gallery: {
+                enabled: true,
+            }
+            // other options
+        });
+    });
 
 
 //counting up
@@ -259,7 +262,7 @@ $('document').ready(function () {
 });
 
 
-
+//isotope
 $('document').ready(function () {
     // init Isotope
     var $grid = $('.grid').isotope({
